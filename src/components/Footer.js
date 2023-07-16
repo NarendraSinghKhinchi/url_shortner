@@ -12,34 +12,34 @@ function Footer() {
         </div>
         <div className='flex flex-col text-center'>
             <div className='font-bold mb-5'>Features</div>
-            <a className='text-gray-400'>Link Shortening</a>
-            <a className='text-gray-400'>Branded Links</a>
-            <a className='text-gray-400'>Analytics</a>
+            <a href="#" className='text-gray-400'>Link Shortening</a>
+            <a href="#" className='text-gray-400'>Branded Links</a>
+            <a href="#" className='text-gray-400'>Analytics</a>
         </div>
         <div className='flex flex-col text-center'>
             <div className='font-bold mb-5'>Resources</div>
-            <a className='text-gray-400'>Blog</a>
-            <a className='text-gray-400'>Developers</a>
-            <a className='text-gray-400'>Support</a>
+            <a href="#" className='text-gray-400'>Blog</a>
+            <a href="#" className='text-gray-400'>Developers</a>
+            <a href="#" className='text-gray-400'>Support</a>
         </div>
         <div className='flex flex-col text-center'>
             <div className='font-bold mb-5'>Company</div>
-            <a className='text-gray-400'>About</a>
-            <a className='text-gray-400'>Our Team</a>
-            <a className='text-gray-400'>Carrers</a>
-            <a className='text-gray-400'>Contact</a>
+            <a href="#" className='text-gray-400'>About</a>
+            <a href="#" className='text-gray-400'>Our Team</a>
+            <a href="#" className='text-gray-400'>Carrers</a>
+            <a href="#" className='text-gray-400'>Contact</a>
         </div>
         <div className='flex flex-row gap-2 justify-center'>
-            <a>
+            <a href="#">
                 <img src={fbIcon} alt='social icon'></img>
             </a>
-            <a>
+            <a href="#" >
                 <img src={instaIcon} alt='social icon'></img>
             </a>
-            <a>
+            <a href="#" >
                 <img src={twitIcon} alt='social icon'></img>
             </a>
-            <a>
+            <a href="#"  >
                 <img src={pinIcon} alt='social icon'></img>
             </a>
         </div>

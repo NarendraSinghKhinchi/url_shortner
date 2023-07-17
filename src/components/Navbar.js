@@ -34,11 +34,11 @@ function Navbar() {
         <div 
           ref={menuRef} 
           className={`${menuState === "open" ? "flex" : "hidden"} 
-            flex-col justify-center items-center w-64 gap-4 
+            flex-col justify-center items-center w-64 gap-4 z-50 
             bg-[#3B3054] rounded-xl absolute right-0 top-12 py-10 duration-1000 delay-1000
           `}
         >
-          <a href='#' className='text-slate-200 font-bold inline-block'>Features</a>
+          <a href='#' className='text-slate-200 font-bold inline-block '>Features</a>
           <a href='#' className='text-slate-200 font-bold inline-block '>Pricing</a>
           <a href='#' className='text-slate-200 font-bold inline-block'>Resources</a>
           <hr className='w-4/5 text-red-600 '></hr>

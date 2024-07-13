@@ -5,7 +5,7 @@ import ShortendUrl from './ShortendUrl';
 function SearchBar() {
   const [value , setValue] = useState("");
   const [loading , setLoading] = useState(false);
-  const [data,setData] = useState({});
+  const [data,setData] = useState("");
 
   const handleShort = async ()=>{
     if(loading)return ;
@@ -22,19 +22,19 @@ function SearchBar() {
         <input onChange={(e)=>{setValue(e.target.value)}} className='px-5 py-2 rounded-sm font-semibold sm:flex-1 outline-none' placeholder='shorten a link here...' value={value}></input>
         <button onClick={handleShort} className='px-5 py-2 bg-[#46C7C7] rounded-md font-bold text-white  sm:w-32'>shorten it!</button>
       </div>
-      {
-        // this display the error 
-        (!(data.ok === undefined) && !data.ok) && (
-          <div className='text-center py-3 font-bold text-lg w-4/5 max-w-5xl m-auto mb-2 bg-white relative rounded-md cursor-pointer'>{data.error.split(".")[0]}.</div>
-        )
-      }
+      {/* // this display the error 
+        // (!(data.ok === undefined) && !data.ok) && (
+        //   <div className='text-center py-3 font-bold text-lg w-4/5 max-w-5xl m-auto mb-2 bg-white relative rounded-md cursor-pointer'>{data.error.split(".")[0]}.</div>
+        // )
+       */}
+        
       {
         // this displays the shortened url 
-        (!(data.ok === undefined) && data.ok) && (
+        data && (
           <>
-          <ShortendUrl shortedUrl={data.result.short_link}></ShortendUrl>
-          <ShortendUrl shortedUrl={data.result.short_link2}></ShortendUrl>
-          <ShortendUrl shortedUrl={data.result.short_link3}></ShortendUrl>
+          <ShortendUrl shortedUrl={data}></ShortendUrl>
+          {/* <ShortendUrl shortedUrl={data.result.short_link2}></ShortendUrl>
+          <ShortendUrl shortedUrl={data.result.short_link3}></ShortendUrl> */}
           </>
         )
       }
